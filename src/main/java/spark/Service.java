@@ -644,7 +644,7 @@ public final class Service extends Routable {
      *
      * @return HaltException object
      */
-    public HaltException halt() {
+    public void halt() {
         throw new HaltException();
     }
 
@@ -656,7 +656,7 @@ public final class Service extends Routable {
      * @param status the status code
      * @return HaltException object with status code set
      */
-    public HaltException halt(int status) {
+    public void halt(int status) {
         throw new HaltException(status);
     }
 
@@ -668,7 +668,7 @@ public final class Service extends Routable {
      * @param body The body content
      * @return HaltException object with body set
      */
-    public HaltException halt(String body) {
+    public void halt(String body) {
         throw new HaltException(body);
     }
 
@@ -681,7 +681,7 @@ public final class Service extends Routable {
      * @param body   The body content
      * @return HaltException object with status and body set
      */
-    public HaltException halt(int status, String body) {
+    public void halt(int status, String body) {
         throw new HaltException(status, body);
     }
 
